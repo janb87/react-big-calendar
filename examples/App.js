@@ -24,6 +24,7 @@ import CustomView from './demos/customView'
 import Resource from './demos/resource'
 import DndResource from './demos/dndresource'
 import Timeslots from './demos/timeslots'
+import Sticky from './demos/sticky'
 import Dnd from './demos/dnd'
 import Dropdown from 'react-bootstrap/lib/Dropdown'
 import MenuItem from 'react-bootstrap/lib/MenuItem'
@@ -43,6 +44,7 @@ const EXAMPLES = {
   customView: 'Custom Calendar Views',
   resource: 'Resource Scheduling',
   dnd: 'Addon: Drag and drop',
+  sticky: 'Sticky header',
 }
 
 const DEFAULT_EXAMPLE = 'basic'
@@ -78,6 +80,7 @@ class Example extends React.Component {
       timeslots: Timeslots,
       dnd: Dnd,
       dndresource: DndResource,
+      sticky: Sticky,
     }[selected]
 
     return (
